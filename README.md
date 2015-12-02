@@ -6,3 +6,5 @@ Devops
 2. Copy the contents of the id_rsa.pub file to your clipboard:
 ```pbcopy < ~/.ssh/id_rsa.pub ```
 
+More info :<br>
+https://help.github.com/articles/generating-ssh-keys/
