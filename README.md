@@ -21,7 +21,18 @@ Devops
 --username root -P \
 --direct -m 1;   ```
 9. See the results: ```hdfs dfs -ls products```
-10. 
+10. Delete this folder ```hdfs dfs -rm -r products ```
+11. Add data using Hive with the table name myProducts ``` sqoop import \
+--connect jdbc:mysql://127.0.0.1:3306/retail_db \
+--table products \
+--username root -P \
+--hive-import \
+--hive-table myProducts \
+--direct -m 1; ```
+12. See the results using Hue in the file browser under user Hive 
+13. ```/ user/ hive/ warehouse/ myproducts/ ```
+13. See the result of Hive using Hive query: ```select * from myProducts  limit 10; ```
+14. 
 
 
 
