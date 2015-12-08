@@ -32,7 +32,10 @@ Devops
 12. See the results using Hue in the file browser under user Hive 
 13. ```/ user/ hive/ warehouse/ myproducts/ ```
 13. See the result of Hive using Hive query: ```select * from myProducts  limit 10; ```
-14. 
+
+### Flume 
+1. Make DIR ```hdfs dfs -mkdir /tmp/flume-ng ```
+2. Make DIR for spool local ```mkdir /tmp/spooldir```
 
 
 
